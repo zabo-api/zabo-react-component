@@ -1,0 +1,22 @@
+.zaboButton {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-image: linear-gradient(135deg, #39F1FF 0%, #5C6FEA 51%, #D693FF 100%);
+  background-size: 100% 200%;
+  transition: all 0.3s;
+}
+.zaboButton:hover {
+  background-position-y: 100%;
+}
+.zaboButton * {
+  vertical-align: middle;
+}
+.zaboButton svg {
+  fill: currentColor;
+  margin-right: 8px;
+  width: 20px;
+}
