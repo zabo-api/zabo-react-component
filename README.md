@@ -32,7 +32,7 @@ class Example extends Component {
           console.log('Account', account)
 
           zaboInstance.transactions.getList()
-            .then(resp => console.log('Transactions List', resp.data))
+            .then(resp => console.log('Transactions List', resp))
         }}
       />
     )

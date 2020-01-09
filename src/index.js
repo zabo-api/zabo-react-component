@@ -19,14 +19,14 @@ export default class ZaboComponent extends Component {
   onError = this.onError.bind(this)
   connect = this.connect.bind(this)
 
-  onInit (app) {
+  onInit (zabo) {
     const { onInit } = this.props
-    if (onInit) onInit(app, Zabo)
+    if (onInit) onInit(zabo.applications.data, zabo)
   }
 
   onConnect (account) {
     const { onConnect } = this.props
-    if (onConnect) onConnect(account, Zabo)
+    if (onConnect) onConnect(account, Zabo.instance)
   }
 
   onError (err) {
@@ -35,9 +35,11 @@ export default class ZaboComponent extends Component {
   }
 
   connect () {
-    Zabo.connect()
-      .onConnection(this.onConnect)
-      .onError(this.onError)
+    if (Zabo.instance) {
+      Zabo.instance.connect()
+        .onConnection(this.onConnect)
+        .onError(this.onError)
+    }
   }
 
   componentWillMount () {
