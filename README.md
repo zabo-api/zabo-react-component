@@ -51,6 +51,12 @@ class Example extends Component {
 
 **Note**: You can also access the Zabo SDK instance via `window` by simply call `window.Zabo`.
 
+## Example
+
+```bash
+npm run example
+```
+
 ## Documentation
 See the [Zabo API docs](https://zabo.com/docs).
 
