@@ -16,7 +16,7 @@
     "npm": ">=5"
   },
   "scripts": {
-    "example": "npm install --prefix ./example && npm start --prefix ./example",
+    "example": "npm run build && npm install --prefix ./example && npm start --prefix ./example",
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
@@ -62,6 +62,6 @@
     "dist"
   ],
   "dependencies": {
-    "zabo-sdk-js": "^0.8.0"
+    "zabo-sdk-js": "^0.8.1"
   }
 }
