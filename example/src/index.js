@@ -10,7 +10,7 @@ ReactDOM.render(
   <ZaboComponent
     clientId={CLIENT_ID}
     env='sandbox'
-    onInit={app => console.log('Application', app)}
+    onInit={team => console.log('Team', team)}
     onError={err => console.log('Error', err)}
     onConnect={(account, zaboInstance) => {
       console.log('Account', account)

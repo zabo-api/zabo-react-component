@@ -21,7 +21,7 @@ export default class ZaboComponent extends Component {
 
   onInit (zabo) {
     const { onInit } = this.props
-    if (onInit) onInit(zabo.applications.data, zabo)
+    if (onInit) onInit(zabo.data, zabo)
   }
 
   onConnect (account) {
