@@ -50,12 +50,6 @@ class Example extends Component {
 
 **Note**: You can also access the Zabo instance via `window` by simply call `window.Zabo.instance`.
 
-## Example
-
-```bash
-npm run example
-```
-
 ## Documentation
 See the [Zabo API docs](https://zabo.com/docs).
 
