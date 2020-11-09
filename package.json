@@ -60,6 +60,6 @@
     "dist"
   ],
   "dependencies": {
-    "zabo-sdk-js": "^0.10.0"
+    "zabo-sdk-js": "^1.0.0"
   }
 }
