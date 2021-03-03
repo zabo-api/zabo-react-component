@@ -1,6 +1,6 @@
 {
   "name": "zabo-react-component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The Zabo React Component provides convenient access to the Zabo API from applications.",
   "author": "Zabo",
   "license": "Apache-2.0",
@@ -60,6 +60,6 @@
     "dist"
   ],
   "dependencies": {
-    "zabo-sdk-js": "^1.0.0"
+    "zabo-sdk-js": "^1.1.0"
   }
 }
